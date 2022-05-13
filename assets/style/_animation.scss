@@ -1,0 +1,35 @@
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    animation: #{$str};
+  }
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+      @content;
+    }
+    @keyframes #{$animation-name} {
+      @content;
+    }  
+}
+
+@include keyframes(pulse_effect) {
+    0% {
+        box-shadow:0 0 0 5px rgba(255,255,255 ,0.9);
+    }
+    25%{
+        box-shadow:0 0 0 10px rgba(255,255,255,0.6);
+    }
+    70%{
+        box-shadow:0 0 0 15px rgba(255 ,255 ,255, 0.3);
+    }
+    100%{
+        box-shadow:0 0 0 20px rgba(255,255,255,0.1);
+    }
+  }
+
+@include keyframes(progress-animate) {
+
+    100%{
+        transform:scaleX(1);
+    }
+}
