@@ -55,13 +55,13 @@
       <div class="side-menu" id="sidemenu">
         <a href="javascript:void(1)" class="close-btn" onclick="closeNav()">&times;</a>
         <a href="#" class="sidemenu-link">Home</a>
-        <a href="#brand" class="sidemenu-link">About</a>
-        <a href="#teams" class="sidemenu-link">Team</a>
-        <a href="#portfolio" class="sidemenu-link">Work</a>
-        <a href="#pricing" class="sidemenu-link">Pricing</a>
-        <a href="#mobile" class="sidemenu-link">App</a>
-        <a href="#dream" class="sidemenu-link">Blog</a>
-        <a href="#contact" class="sidemenu-link">Contact</a>
+        <a href="#brand" class="sidemenu-link" onclick="closeNav()">About</a>
+        <a href="#teams" class="sidemenu-link" onclick="closeNav()">Team</a>
+        <a href="#portfolio" class="sidemenu-link" onclick="closeNav()">Work</a>
+        <a href="#pricing" class="sidemenu-link" onclick="closeNav()">Pricing</a>
+        <a href="#mobile" class="sidemenu-link" onclick="closeNav()">App</a>
+        <a href="#dream" class="sidemenu-link" onclick="closeNav()">Blog</a>
+        <a href="#contact" class="sidemenu-link" onclick="closeNav()">Contact</a>
 
         <div class="social-media">
           <ul class="social-links">
@@ -168,7 +168,7 @@
     <!-- brand Feature -->
 
     <!-- Basic company info -->
-    <div class="info-container">
+    <div class="info-container" id="info-container">
       <div class="info-wraper">
         <span class="info-span">Basic info about company</span>
         <h1 class="info-tag">Our Services</h1>
@@ -213,7 +213,7 @@
     </div>
     <!-- Basic company info -->
     <!-- exculsive digital service -->
-    <div class="digital-container">
+    <div class="digital-container" id="digital-container">
       <div class="dg-img"></div>
       <div class="digital-wraper">
         <span class="dg-span">
@@ -500,7 +500,7 @@
 
   <!-- testimonal section-->
 
-  <div class="testimonal-container">
+  <div class="testimonal-container" id="testimonal-container">
     <div class="testimonal-box-one">
       <i class="fa fa-quote-right"></i>
 
@@ -564,7 +564,7 @@
   </div>
   <!-- Mobile design -->
 
-  <div class="design-container">
+  <div class="design-container" id="design-container">
     <div class="design-box-one">
       <div class="app-feature-one">
         <i class="fa fa-diamond "></i>
@@ -706,7 +706,7 @@
   <!-- Company contact -->
 
   <!--goggle Map -->
-  <div class="google-map">
+  <div class="google-map" id="google-map-container">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14683.004169683323!2d72.53231360000001!3d23.0695871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e834bfa9b0ba3%3A0x3be8e1cdf601399!2sRenaissance%20Ahmedabad%20Hotel!5e0!3m2!1sen!2sin!4v1648013171319!5m2!1sen!2sin"
       width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -714,7 +714,7 @@
   <!--goggle Map -->
   <!-- Footer -->
 
-  <div class="footer-container">
+  <div class="footer-container" id="footer-container">
     <div class="footer-socials">
       <ul class="footer-links">
         <li>
@@ -742,7 +742,7 @@
   <!-- Footer -->
   <!-- Arrow button -->
   <a href="#" class="scroll-arrow" id="scroll-up">
-    <i class="fa fa-angle-up"></i>
+    <i class="fa fa-angle-up scroll-top-arrow" ></i>
   </a>
   <!-- Arrow button -->
   </div>
